@@ -1698,8 +1698,15 @@ input {
 
 
 /* For tall screens on mobiles y desktop*/
-@media screen and (max-height: 330px) {
-  
+@media screen and (min-height: 300px) {
+  body {
+    margin: 0;
+  }
+
+  .home__container,
+  .home__img {
+    height: 640px;
+  }
 
   .card{
     display: grid;
@@ -1707,16 +1714,12 @@ input {
     align-items: center;
     place-items: center;
     justify-content: center;
-    padding: .5rem 0 .5rem;
+    padding: .5% 0 .5rem;
   }
 
   .card_1 {
-    font-size: var(--h2-font-size);
-    color: var(--title-color);
-    text-align: center;
-    text-transform: capitalize;
-    margin-bottom: var(--mb-2);
-    padding: 5% 0 0.5%;
+    padding: 1% 0 0.5%;
   }
+
 }
 
